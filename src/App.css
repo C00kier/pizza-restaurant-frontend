@@ -1,3 +1,31 @@
 .App {
   text-align: center;
+  --white-lower-contrast: #fdfdfd;
+  --white-primary-text: #fff;
+  --navbar-background: #eeebeb;
+  --red-primary: #f00404;
+  --green-primary: #59b326;
 }
+
+/*display-direction-justify-align*/
+.flex{
+  display: flex;
+}
+
+.direction-column{
+  flex-direction: column;
+}
+
+.justify-center{
+  justify-content: center;
+}
+
+.justify-end{
+  justify-content: flex-end;
+}
+
+.align-center{
+  align-items: center;
+}
+
+
