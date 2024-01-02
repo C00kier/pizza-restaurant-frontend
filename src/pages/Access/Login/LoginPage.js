@@ -30,7 +30,7 @@ export default function LoginPage() {
 
     return (
         <div className="flex direction-column justify-center access-container">
-            <h1>Logowanie</h1>
+            <h2>Logowanie</h2>
             <form className="flex direction-column align-self-center access-form">
                 <div className="access-field-div">
                     <input
@@ -58,7 +58,6 @@ export default function LoginPage() {
                     <span className="access-link" onClick={() => redirectToForgotPassword()}>Nie pamiętasz hasła?</span>
                 </p>
             </form>
-
         </div>
     )
 }
