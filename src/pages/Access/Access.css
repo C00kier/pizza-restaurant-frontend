@@ -1,0 +1,42 @@
+.access-container{
+    gap: 1.5em;
+    padding-top: 5em;
+}
+
+.access-form{
+    gap: 1em;
+    border-radius: 10px;
+    padding: 25px 20px;
+    background-color: var(--form-background);
+    box-shadow: 5px 3px 5px rgba(0, 0, 0, 0.295);
+}
+
+.access-input{
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 1.1em;
+    padding: 0.6em;
+}
+
+.access-button{
+    border: 1px solid black;
+    font-weight: 500;
+    font-size: 1.3em;
+    border-radius: 5px;
+    padding: 0.3em 0.6em ;
+    background-color: black;
+    color: white;
+    box-shadow: 3px 3px 1px lightgray;
+    cursor: pointer;
+}
+
+.access-form > p{
+    margin: 0;
+}
+
+.access-link{
+    color: red;
+    text-decoration: underline;
+    cursor: pointer;
+    font-weight: 600;
+}

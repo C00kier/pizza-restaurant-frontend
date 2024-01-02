@@ -3,13 +3,17 @@
   --white-lower-contrast: #fdfdfd;
   --white-primary-text: #fff;
   --navbar-background: #eeebeb;
+  --form-background: #eeebeb;
   --red-primary: #f00404;
   --green-primary: #59b326;
 }
 
-/*display-direction-justify-align*/
 .flex{
   display: flex;
+}
+
+.grid{
+  display: grid;
 }
 
 .direction-column{
@@ -28,4 +32,6 @@
   align-items: center;
 }
 
-
+.align-self-center{
+  align-self: center;
+}

@@ -21,6 +21,7 @@ import OfferPage from './pages/Offer/OfferPage';
 import LoginPage from './pages/Access/Login/LoginPage';
 import RegisterPage from './pages/Access/Register/RegisterPage';
 import PageNotFound from './pages/NotFound/PageNotFound';
+import ForgotPassword from './pages/Access/ForgotPassword/ForgotPassword';
 
 function App() {
   const router = createBrowserRouter(
@@ -42,6 +43,7 @@ function App() {
             <Route path={PAGES.CONTACT} element={<ContactPage/>}/>
             <Route path={PAGES.OFFER} element={<OfferPage/>}/>
             <Route path={PAGES.LOGIN} element={<LoginPage/>}/>
+            <Route path={PAGES.FORGOT_PASSWORD} element={<ForgotPassword/>}/>
             <Route path={PAGES.REGISTER} element={<RegisterPage/>}/>
             <Route path={PAGES.UNASSIGNED} element={<PageNotFound/>}/>
         </Route>
