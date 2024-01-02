@@ -40,3 +40,28 @@
     cursor: pointer;
     font-weight: 600;
 }
+
+.access-credentials-valid,
+.access-credentials-invalid{
+    font-size: 0.8em;
+}
+
+.access-credentials-valid{
+    color: var(--green-primary);
+}
+
+.access-credentials-invalid{
+    color: crimson;
+}
+
+#register-password-div{
+    position: relative;
+}
+
+#eye_icon{
+    width: 1.5em;
+    aspect-ratio: 1;
+    position: absolute;
+    top:10px;
+    right: 15px;
+}
