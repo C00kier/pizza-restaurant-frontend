@@ -4,6 +4,7 @@ const PAGES = {
     REGISTER: "/register",
     CONTACT: "/contact",
     OFFER: "/offer",
+    FORGOT_PASSWORD: "/forgot_password",
     UNASSIGNED: "*"
 }
 
