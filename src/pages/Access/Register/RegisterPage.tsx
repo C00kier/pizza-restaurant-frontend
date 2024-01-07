@@ -9,6 +9,7 @@ import PAGES from "../../../constants/PAGES";
 import eye_open from "../../../assets/register/eye_open.png";
 import eye_close from "../../../assets/register/eye_close.png";
 
+
 export default function RegisterPage() {
     const navigate = useNavigate();
     const [registerCredentials, setRegisterCredentials] = useState({
@@ -19,7 +20,7 @@ export default function RegisterPage() {
     const [isPasswordValid, setIsPasswordValid] = useState(false);
     const [isPasswordVisible, setIsPasswordVisible] = useState(false);
 
-    function emailInputOnChangeEvent(e) {
+    function emailInputOnChangeEvent(e : React.ChangeEvent<HTMLInputElement>) {
         const targetValue = e.target.value;
         setRegisterCredentials(Object.assign(registerCredentials, { email: targetValue }));
 
@@ -31,7 +32,7 @@ export default function RegisterPage() {
         setIsEmailValid(false);
     }
 
-    function passwordInputOnChangeEvent(e) {
+    function passwordInputOnChangeEvent(e : React.ChangeEvent<HTMLInputElement>) {
         const targetValue = e.target.value;
         setRegisterCredentials(Object.assign(registerCredentials, { password: e.target.value }));
 
@@ -43,11 +44,11 @@ export default function RegisterPage() {
         setIsPasswordValid(false);
     }
 
-    function redirectToLogin() {
+    function redirectToLogin() : void {
         navigate(PAGES.LOGIN)
     }
 
-    function eyeIconOnClickEvent() {
+    function eyeIconOnClickEvent() : void {
         setIsPasswordVisible(!isPasswordVisible);
     }
 
@@ -93,6 +94,7 @@ export default function RegisterPage() {
                     <img
                         id="eye_icon"
                         src={isPasswordVisible ? eye_open : eye_close}
+                        alt="eye"
                         onClick={() => eyeIconOnClickEvent()} />
                 </div>
 

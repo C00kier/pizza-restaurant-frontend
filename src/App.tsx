@@ -5,7 +5,6 @@ import {
   Outlet,
   RouterProvider
 } from 'react-router-dom';
-
 import './App.css';
 
 //constants
@@ -22,6 +21,7 @@ import LoginPage from './pages/Access/Login/LoginPage';
 import RegisterPage from './pages/Access/Register/RegisterPage';
 import PageNotFound from './pages/NotFound/PageNotFound';
 import ForgotPassword from './pages/Access/ForgotPassword/ForgotPassword';
+
 
 function App() {
   const router = createBrowserRouter(
