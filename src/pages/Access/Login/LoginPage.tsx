@@ -5,6 +5,7 @@ import "../Access.css";
 //constants
 import PAGES from "../../../constants/PAGES";
 
+
 export default function LoginPage() {
     const navigate = useNavigate();
     const [loginCredentials, setLoginCredentials] = useState({
@@ -12,19 +13,19 @@ export default function LoginPage() {
         password: ""
     })
 
-    function emailInputOnChangeEvent(e) {
+    function emailInputOnChangeEvent(e : React.ChangeEvent<HTMLInputElement>) {
         setLoginCredentials(Object.assign(loginCredentials, { email: e.target.value }));
     }
 
-    function passwordInputOnChangeEvent(e) {
+    function passwordInputOnChangeEvent(e : React.ChangeEvent<HTMLInputElement>) {
         setLoginCredentials(Object.assign(loginCredentials, { password: e.target.value }));
     }
 
-    function redirectToRegister() {
+    function redirectToRegister() : void {
         navigate(PAGES.REGISTER);
     }
 
-    function redirectToForgotPassword() {
+    function redirectToForgotPassword() : void {
         navigate(PAGES.FORGOT_PASSWORD);
     }
 

@@ -10,6 +10,7 @@ import blankIcon from "../../assets/common/blankIcon.png";
 //constants
 import PAGES from "../../constants/PAGES";
 
+
 export default function Navbar() {
     const navigate = useNavigate();
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -26,15 +27,15 @@ export default function Navbar() {
         };
     }, []);
 
-    function redirectToHomePage() {
+    function redirectToHomePage() : void {
         navigate(PAGES.HOME);
     }
 
-    function redirectToLoginPage() {
+    function redirectToLoginPage() : void {
         navigate(PAGES.LOGIN);
     }
 
-    function redirectToOfferPage() {
+    function redirectToOfferPage() : void {
         navigate(PAGES.OFFER);
     }
 
