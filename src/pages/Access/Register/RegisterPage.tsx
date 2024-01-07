@@ -20,7 +20,7 @@ export default function RegisterPage() {
     const [isPasswordValid, setIsPasswordValid] = useState(false);
     const [isPasswordVisible, setIsPasswordVisible] = useState(false);
 
-    function emailInputOnChangeEvent(e : React.ChangeEvent<HTMLInputElement>) {
+    function emailInputOnChangeEvent(e: React.ChangeEvent<HTMLInputElement>) {
         const targetValue = e.target.value;
         setRegisterCredentials(Object.assign(registerCredentials, { email: targetValue }));
 
@@ -32,7 +32,7 @@ export default function RegisterPage() {
         setIsEmailValid(false);
     }
 
-    function passwordInputOnChangeEvent(e : React.ChangeEvent<HTMLInputElement>) {
+    function passwordInputOnChangeEvent(e: React.ChangeEvent<HTMLInputElement>) {
         const targetValue = e.target.value;
         setRegisterCredentials(Object.assign(registerCredentials, { password: e.target.value }));
 
@@ -44,19 +44,11 @@ export default function RegisterPage() {
         setIsPasswordValid(false);
     }
 
-    function redirectToLogin() : void {
-        navigate(PAGES.LOGIN)
-    }
-
-    function eyeIconOnClickEvent() : void {
-        setIsPasswordVisible(!isPasswordVisible);
-    }
-
     return (
         <div className="flex direction-column justify-center access-container">
             <h2>Załóż nowe konto</h2>
             <form className="flex direction-column align-self-center access-form">
-                <div className="access-field-div">
+                <div>
                     <input
                         className="access-input"
                         type="email"
@@ -71,7 +63,7 @@ export default function RegisterPage() {
                         * Wprowadź poprawny adres e-mail
                     </p>
                 </div>
-                <div className="access-field-div" id="register-password-div">
+                <div id="register-password-div">
                     <input
                         className="access-input"
                         type={isPasswordVisible ? "text" : "password"}
@@ -95,12 +87,16 @@ export default function RegisterPage() {
                         id="eye_icon"
                         src={isPasswordVisible ? eye_open : eye_close}
                         alt="eye"
-                        onClick={() => eyeIconOnClickEvent()} />
+                        onClick={(): void => setIsPasswordVisible(!isPasswordVisible)} />
                 </div>
 
-                <button className="align-self-center access-button" type="submit">Zarejestruj</button>
+                <button
+                    className="align-self-center access-button"
+                    type="submit">
+                    Zarejestruj
+                </button>
                 <p>
-                    Masz konto? <span className="access-link" onClick={() => redirectToLogin()}>Zaloguj się</span>
+                    Masz konto? <span className="access-link" onClick={(): void => navigate(PAGES.LOGIN)}>Zaloguj się</span>
                 </p>
             </form>
         </div>
