@@ -1,0 +1,19 @@
+.offer-page-div{
+    padding-top: 2em;
+    grid-template-columns: 3fr 1fr;
+    margin: 0 2em 0 2em;
+    column-gap: 2em;
+}
+
+.offers-div{
+    grid-column: 1/2;
+}
+
+.basket-div{
+    grid-column: 2/3;
+}
+
+.offers-div,
+.basket-div{
+    grid-row: 1/2;
+}

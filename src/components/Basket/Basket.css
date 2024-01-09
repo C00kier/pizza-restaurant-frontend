@@ -1,0 +1,49 @@
+.basket{
+    background-color: var(--basket-background);
+    max-width: 18em;
+    border-radius: 15px;
+    margin-top: 2em;
+    padding: 2em 2em 1em 2em;
+}
+
+#cart-header{
+    font-size: 1.3em;
+}
+
+.order-container{
+    padding: 2em 0 2em 0;
+    border-top: 2px solid lightgray;
+}
+
+.inactive{
+    background-color: lightgray;
+    color: gray;
+}
+
+.active,
+.inactive{
+    border-radius: 15px;
+    cursor: pointer;
+    padding: 0em 1em;
+}
+
+.active{
+    background-color: var(--active-button);
+    color: white;
+}
+
+.order-button-text{
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+/*Empty basket*/
+#empty-cart-image{
+    width: 6em;
+}
+
+#empty-cart-text{
+    font-size: 1.3em;
+    color: var(--grey-text);
+    font-weight: 700;
+}

@@ -1,9 +1,20 @@
 import "./Offer.css";
 
-export default function OfferPage(){
-    return(
+//components
+import Basket from "../../components/Basket/Basket";
+import OfferSection from "../../components/OfferSection/OfferSection";
+
+export default function OfferPage() {
+    return (
         <>
-            <h1>Offer</h1>
+            <div className="grid offer-page-div">
+                <div className="flex direction-column offers-div">
+                    <OfferSection />
+                </div>
+                <div className="basket-div">
+                    <Basket />
+                </div>
+            </div>
         </>
     )
 }

@@ -4,6 +4,9 @@
   --white-primary-text: #fff;
   --navbar-background: #eeebeb;
   --form-background: #eeebeb;
+  --basket-background: #f5f5f5;
+  --grey-text: #929292;
+  --active-button:  #509e22;
   --red-primary: #f00404;
   --green-primary: #59b326;
 }
@@ -26,6 +29,10 @@
 
 .justify-end{
   justify-content: flex-end;
+}
+
+.justify-space-between{
+  justify-content: space-between;
 }
 
 .align-center{
